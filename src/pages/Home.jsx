@@ -6,7 +6,7 @@ function Home() {
       <figure className="image">
         <img src="/images/mamta.jpeg" alt="Mamta's photo" />
         <figcaption className="figure-caption">
-          <strong>Web Developer | Designer | Creator</strong>
+          <strong>Fullstack Developer | Designer | Creator</strong>
         </figcaption>
       </figure>
       <div className="description">
@@ -33,6 +33,12 @@ function Home() {
         <div>
           <Skills />
         </div>
+      </div>
+      <div>
+        <div className="projects-title">
+          <strong>projects worked on: </strong>
+        </div>
+        <button>View Projects</button>
       </div>
     </div>
   );

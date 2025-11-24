@@ -2,41 +2,24 @@ import React from "react";
 import "./css/reset.css";
 import "./css/style.css";
 import "./App.css";
+import Header from "./components/Header.jsx";
 import Home from "./pages/Home";
-import LiquidEther from "./components/LiquidEther";
+import Projects from "./pages/Projects";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
-    <>
-      <div
-        style={{
-          width: "100%",
-          height: "600vh",
-          position: "fixed",
-          top: 0,
-          left: 0,
-        }}
-      >
-        <LiquidEther
-          colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
-          mouseForce={20}
-          cursorSize={100}
-          isViscous={false}
-          viscous={30}
-          iterationsViscous={32}
-          iterationsPoisson={32}
-          resolution={0.5}
-          isBounce={false}
-          autoDemo={true}
-          autoSpeed={0.5}
-          autoIntensity={2.2}
-          takeoverDuration={0.25}
-          autoResumeDelay={3000}
-          autoRampDuration={0.6}
-        />
+    <Router>
+      <Header />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
       </div>
-      <Home />
-    </>
+      <Footer />
+    </Router>
   );
 }
 
