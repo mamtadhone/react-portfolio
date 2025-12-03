@@ -132,4 +132,27 @@ body {
   margin-bottom: 25px;
 }
 
+.view-project-button {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.view-project-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 4px black;
+  background-color: #175555;
+  color: white;
+}
+
+.view-git {
+  text-decoration: underline;
+}
+
+.view-git:hover {
+  color: #05d7a2;
+}
+
 /* ******************************************************************* */

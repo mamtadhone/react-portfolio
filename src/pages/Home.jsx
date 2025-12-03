@@ -1,4 +1,5 @@
 import Skills from "../components/Skills";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -38,7 +39,9 @@ function Home() {
         <div className="projects-title">
           <strong>projects worked on: </strong>
         </div>
-        <button>View Projects</button>
+        <Link to="/projects">
+          <button className="view-project-button">View Projects</button>
+        </Link>
       </div>
     </div>
   );
